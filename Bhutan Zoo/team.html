@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Takin Zoo</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/android-chrome-512x512.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+                ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.team-page-section{
+    position:relative;
+    padding-top:70px;
+}
+
+.team-page-section .team-block{
+    margin-bottom:60px;
+}
+
+.sec-title{
+    position:relative;
+    z-index:1;
+    margin-bottom:65px;
+}
+
+.sec-title .title{
+    position:relative;
+    font-size:18px;
+    color:#5FBF05;
+    font-weight:700;
+    margin-bottom:12px;
+    text-transform:capitalize;
+}
+
+.sec-title .separator{
+    position:relative;
+    width:40px;
+    margin-top:16px !important;
+}
+
+.sec-title .separator:before{
+    position:absolute;
+    content:'';
+    left:0px;
+    top:0px;
+    width:10px;
+    height:2px;
+    background-color:#ff9600;
+}
+
+.sec-title .separator:after{
+    position:absolute;
+    content:'';
+    right:0px;
+    top:0px;
+    width:10px;
+    height:2px;
+    background-color:#ff9600;
+}
+
+.sec-title .separator span{
+    position:absolute;
+    left:50%;
+    top:-2px;
+    width:10px;
+    height:5px;
+    margin-left:-5px;
+    display:inline-block;
+    background-color:#5FBF05;
+}
+
+.sec-title h2{
+    position:relative;
+    color:#222222;
+    font-weight:700;
+    font-size:36px;
+    line-height:1.2em;
+    margin-top:35px;
+}
+
+.sec-title .text{
+    position:relative;
+    font-size:14px;
+    line-height:1.9em;
+    color:#555555;
+    margin-top:10px;
+}
+
+.sec-title.centered .separator{
+    margin:0 auto !important;
+    float:none !important;
+}
+
+.sec-title.centered{
+    text-align: center !important;
+}
+
+.sec-title.light .title{
+    color:#ffffff;
+}
+
+.sec-title.light h2{
+    color:#ffffff;
+}
+
+.sec-title.light .separator span{
+    background-color:#ff9600;
+}
+
+.sec-title.light .separator:before,
+.sec-title.light .separator:after{
+    background-color:#ffffff;
+}
+
+.team-section{
+    position:relative;
+    padding:80px 0px 60px;
+}
+
+.team-section.style-two .pattern-layer{
+    position:absolute;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+.team-section .title-box{
+    position:relative;
+    text-align:center;
+}
+
+.team-section .title-box h2{
+    position: relative;
+    color: #222222;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-bottom: 50px;
+}
+
+.team-section .title-box h2 span{
+    color: #ff9600;
+}
+
+.team-block{
+    position:relative;
+}
+
+.team-block .inner-box{
+    position:relative;
+    padding:40px 70px 28px 0px;
+}
+
+.team-block .inner-box:before{
+    position:absolute;
+    content:'';
+    right:0px;
+    top:0px;
+    left:70px;
+    bottom:0px;
+    border-radius:10px;
+    background-color:#f5f5f5;
+    -webkit-transition:all 600ms ease;
+    -moz-transition:all 600ms ease;
+    -ms-transition:all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition:all 600ms ease;
+}
+
+.team-block .inner-box::after{
+    position:absolute;
+    content:'';
+    top:0px;
+    left:70px;
+    bottom:0px;
+    width:0%;
+    border-radius:10px;
+    -webkit-transition:all 600ms ease;
+    -moz-transition:all 600ms ease;
+    -ms-transition:all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition:all 600ms ease;
+    background-image: -ms-linear-gradient(top, #ffca08 0%, #5FBF05 100%);
+    background-image: -moz-linear-gradient(top, #ffca08 0%, #5FBF05 100%);
+    background-image: -o-linear-gradient(top, #ffca08 0%, #5FBF05 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffca08), color-stop(100, #5FBF05));
+    background-image: -webkit-linear-gradient(top, #ffca08 0%, #5FBF05 100%);
+    background-image: linear-gradient(to bottom, #ffca08 0%, #5FBF05 100%);
+}
+
+.team-block .inner-box:hover::after{
+    width:81%;
+}
+
+.team-block .inner-box .social-icons{
+    position:absolute;
+    right:25px;
+    top:100px;
+    z-index:1;
+}
+
+.team-block .inner-box .social-icons li{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.team-block .inner-box .social-icons li a{
+    position:relative;
+    color:#5FBF05;
+    font-size:18px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.team-block .inner-box:hover .lower-content h3 a,
+.team-block .inner-box:hover .social-icons li a,
+.team-block .inner-box:hover .lower-content .designation{
+    color:#ffffff;
+}
+
+.team-block .inner-box .image{
+    position:relative;
+    z-index:1;
+    border-radius:10px;
+    background-color:#ffffff;
+    box-shadow:inset 0px 0px 35px rgba(0,0,0,0.20);
+}
+
+.team-block .inner-box .image img{
+    position:relative;
+    width:100%;
+    display:block;
+}
+
+.team-block .inner-box .lower-content{
+    position:relative;
+    text-align:left;
+    z-index:1;
+    padding:30px 15px 0px 110px;
+}
+
+.team-block .inner-box .lower-content h3{
+    position:relative;
+    color:#5FBF05;
+    font-size:18px;
+    font-weight:700;
+    line-height:1.3em;
+}
+
+.team-block .inner-box .lower-content h3 a{
+    position:relative;
+    color:#5FBF05;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.team-block .inner-box .lower-content .designation{
+    position:relative;
+    margin-top:5px;
+    color:#777777;
+    font-size:14px;
+}
+
+.team-block.style-two .inner-box .lower-content h3 a,
+.team-block.style-two .inner-box .social-icons li a{
+    color:#ff9600;
+}
+
+.team-block.style-two .inner-box:hover .lower-content h3 a,
+.team-block.style-two .inner-box:hover .social-icons li a{
+    color:#ffffff;
+}
+
+.team-block.style-two .inner-box::after{
+    background-image: -ms-linear-gradient(top, #FFEB3C 0%, #ff9600 100%);
+    background-image: -moz-linear-gradient(top, #FFEB3C 0%, #ff9600 100%);
+    background-image: -o-linear-gradient(top, #FFEB3C 0%, #ff9600 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFEB3C), color-stop(100, #ff9600));
+    background-image: -webkit-linear-gradient(top, #FFEB3C 0%, #ff9600 100%);
+    background-image: linear-gradient(to bottom, #FFEB3C 0%, #ff9600 100%);
+}
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Mothithang, Thimphu, Bhutan</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 9:00 AM - 4:00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+97577210490</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+     <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/icon/icon-10.png" alt="Icon">
+            <h1 class="m-0 text-primary">Takin Zoo</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <div class="nav-item dropdown">
+                    <a href="home.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="contact.html" class="dropdown-item">Contact Us</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="about.html" class="dropdown-item">Our History</a>
+                        <a href="membership.html" class="dropdown-item">Our Team</a>
+                        <a href="visiting.html" class="dropdown-item">Sustainability Efforts</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Animals</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Our Animals</a>
+                        <a href="membership.html" class="dropdown-item">Exhibits</a>
+                        <a href="testimonial.html" class="dropdown-item">Fun Facts</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Conservation</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Our Efforts</a>
+                        <a href="membership.html" class="dropdown-item">Partner with Us</a>
+                        <a href="visiting.html" class="dropdown-item">How You Can Help</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Education</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Educational Programs</a>
+                        <a href="membership.html" class="dropdown-item">Animal Encounters</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events & Activities</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Upcoming Events</a>
+                        <a href="membership.html" class="dropdown-item">Keeper Talks</a>
+                        <a href="visiting.html" class="dropdown-item">Family Fun Days</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Support the Zoo</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Donate</a>
+                        <a href="membership.html" class="dropdown-item">Membership</a>
+                        <a href="visiting.html" class="dropdown-item">Visiting Hours</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid header-bg py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-4 text-white mb-3 animated slideInDown">Our Team</h1>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Our Team Start -->
+
+    <section>
+        <section class="team-page-section">
+            <div class="container">
+                <!-- Sec Title -->
+                <div class="sec-title centered">
+                    <div class="title">Our Team</div>
+                    <div class="separator"><span></span></div>
+                    <h2>Lorem Ipsum dummy text</h2>
+                </div>
+    
+                <div class="row clearfix">
+    
+                    <!-- Team Block -->
+                    <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+    
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <div class="image">
+                                <a href="#"><img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <h3><a href="#">Lorem Ipsum </a></h3>
+                                <div class="designation">Simply dummy text </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Block -->
+                    <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+    
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <div class="image">
+                                <a href="#"><img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <h3><a href="#">Lorem Ipsum </a></h3>
+                                <div class="designation">Simply dummy text </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Block -->
+                    <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+    
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <div class="image">
+                                <a href="#"><img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <h3><a href="#">Lorem Ipsum </a></h3>
+                                <div class="designation">Simply dummy text </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Block -->
+                    <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+    
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <div class="image">
+                                <a href="#"><img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <h3><a href="#">Lorem Ipsum </a></h3>
+                                <div class="designation">Simply dummy text </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Block -->
+                    <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+    
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <div class="image">
+                                <a href="#"><img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <h3><a href="#">Lorem Ipsum </a></h3>
+                                <div class="designation">Simply dummy text </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Block -->
+                    <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+    
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <div class="image">
+                                <a href="#"><img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <h3><a href="#">Lorem Ipsum </a></h3>
+                                <div class="designation">Simply dummy text </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    </section>
+   
+    <!-- Our Team End -->
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Mothithang, Thimphu, BHUTAN</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+97577210490</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Bikramghalley@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Popular Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Don't miss a chance to see one of a kind animal</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Takin Zoo</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

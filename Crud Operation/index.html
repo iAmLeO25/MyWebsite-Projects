@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+    <h2>EMPLOYEE LIST</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>EMPLOYEE NAME</th>
+                <th>EMPLOYEE ID</th>
+                <th>DATE</th>
+            </tr>
+        </thead>
+        <tbody id="employee-list">
+            <tr>
+                <td>namgay</td>
+                <td>EM-1</td>
+                <td>03/04/23</td>
+            </tr>
+            <tr>
+                <td>sonam</td>
+                <td>EM-2</td>
+                <td>04/07/23</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>OPTIONS</h2>
+    <div class="btns">
+        <button onclick="addEmployee()">ADD EMPLOYEE</button>
+        <button onclick="removeEmployee()">REMOVE EMPLOYEE</button>
+        <button onclick="updateEmployee()">UPDATE EMPLOYEE</button>
+    </div>
+</body>
+</html>

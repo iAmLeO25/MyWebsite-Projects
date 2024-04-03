@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Takin Zoo</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/android-chrome-512x512.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+	font-family: "Noto Sans JP", sans-serif;
+	letter-spacing: 0.5px;
+	color: #0c0b1f;
+}
+
+/* START PRICING SECTION */
+
+.pricing-section .header-section {
+	position: relative;
+	padding: 120px 0;
+	min-height: 470px;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/81/Bhutan_Takin%2C_Jigme_Dorji_National_Park.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.pricing-section .header-section .container {
+	position: relative;
+	z-index: 2
+}
+
+.pricing-section .header-section .title {
+	font-size: 40px;
+	font-weight: 900;
+	color: #fff;
+}
+
+.pricing-section .header-section .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(to right, #1d3222, #033b0a);
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.pricing-section .translate-y {
+	position: relative;
+	z-index: 3;
+	transform: translateY(-230px);
+}
+
+.pricing-section .single-pricing {
+	margin-bottom: 30px;
+	padding: 50px 30px;
+	background-color: #fff;
+	box-shadow: 0 10px 20px 10px rgba(255, 0, 122, 0.07);
+}
+
+.pricing-section .single-pricing .title {
+	margin-bottom: 12px;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.pricing-section .single-pricing .price {
+	display: block;
+    margin-bottom: 25px;
+	font-size: 60px;
+	font-weight: 900;
+	color: #5FBF05;
+}
+
+.pricing-section .single-pricing .features {
+    margin-bottom: 26px;
+	font-size: 16px;
+	color: #8e8d8e;
+}
+
+.pricing-section .single-pricing .features li {
+	margin-bottom: 10px;
+}
+
+.pricing-section .single-pricing .vat {
+	display: block;
+    margin-bottom: 35px;
+	font-size: 14px;
+    font-weight: 900;
+	color: #5FBF05;
+}
+
+.pricing-section .single-pricing .buy-ticket {
+	display: inline-block;
+	padding: 18px 28px;
+	min-width: 180px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  text-decoration: none !important;
+	color: #0c0b1f;
+	border-radius: 5px;
+	text-transform: uppercase;
+	transition: all .3s;
+}
+
+.pricing-section .single-pricing .buy-ticket:hover {
+	border-color: #5FBF05;
+	background-color: #5FBF05;
+	color: #5FBF05;
+	box-shadow:#5FBF05;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Mothithang, Thimphu, Bhutan</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 9:00 AM - 4:00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+97577210490</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+     <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/icon/icon-10.png" alt="Icon">
+            <h1 class="m-0 text-primary">Takin Zoo</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <div class="nav-item dropdown">
+                    <a href="home.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="service.html" class="dropdown-item">Services</a>
+                        <a href="" class="btn btn-primary">Buy Ticket<i class="fa fa-arrow-right ms-3"></i></a>
+                        <a href="contact.html" class="dropdown-item">Contact Us</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="about.html" class="dropdown-item">Our History</a>
+                        <a href="membership.html" class="dropdown-item">Our Team</a>
+                        <a href="visiting.html" class="dropdown-item">Sustainability Efforts</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Animals</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Our Animals</a>
+                        <a href="membership.html" class="dropdown-item">Exhibits</a>
+                        <a href="testimonial.html" class="dropdown-item">Fun Facts</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Conservation</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Our Efforts</a>
+                        <a href="membership.html" class="dropdown-item">Partner with Us</a>
+                        <a href="visiting.html" class="dropdown-item">How You Can Help</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Education</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Educational Programs</a>
+                        <a href="membership.html" class="dropdown-item">Animal Encounters</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events & Activities</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Upcoming Events</a>
+                        <a href="membership.html" class="dropdown-item">Keeper Talks</a>
+                        <a href="visiting.html" class="dropdown-item">Family Fun Days</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Support the Zoo</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Donate</a>
+                        <a href="membership.html" class="dropdown-item">Membership</a>
+                        <a href="visiting.html" class="dropdown-item">Visiting Hours</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    
+    
+	<section class="pricing-section text-center">
+		<div class="header-section">
+			<div class="container">
+				<h2 class="title">Get Your Ticket</h2>
+			</div>
+			<div class="overlay"></div>
+		</div>
+		<div class="container translate-y">
+			<div class="row justify-content-center">
+				<!-- Start single pricing -->
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="single-pricing">
+						<h3 class="title">Basic Pass</h3>
+						<span class="price">Nu.600</span>
+						<ul class="features list-unstyled">
+							<li>Regular Seating</li>
+							<li>Comfortable Seat</li>
+							<li>Coffee Break</li>
+							<li>Photos Allowed</li>
+							<li>One Workshop</li>
+							<li>Certificate</li>
+						</ul>
+						<span class="vat">Price Excluding 20% VAT</span>
+						<a href="#" class="buy-ticket">Buy Ticket</a>
+					</div>
+				</div>
+				<!-- / End single pricing -->
+				<!-- Start single pricing -->
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="single-pricing">
+						<h3 class="title">Standard Pass</h3>
+						<span class="price">Nu.900</span>
+						<ul class="features list-unstyled">
+							<li>Two Day Conference Ticket</li>
+							<li>Coffee Break & Networking</li>
+							<li>Posters Session</li>
+							<li>Lunch & Networking</li>
+							<li>Talk to the Editors Session</li>
+							<li>2 Workshops</li>
+						</ul>
+						<span class="vat">Price Excluding 20% VAT</span>
+						<a href="#" class="buy-ticket">Buy Ticket</a>
+					</div>
+				</div>
+				<!-- / End single pricing -->
+				<!-- Start single pricing -->
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="single-pricing">
+						<h3 class="title">Golden Pass</h3>
+						<span class="price">Nu.1500</span>
+						<ul class="features list-unstyled">
+							<li>Three Day Conference Ticket</li>
+							<li>Comfortable Seat</li>
+							<li>Coffee Break</li>
+							<li>Photos Allowed</li>
+							<li>One Workshop</li>
+							<li>Certificate</li>
+						</ul>
+						<span class="vat">Price Excluding 20% VAT</span>
+						<a href="#" class="buy-ticket">Buy Ticket</a>
+					</div>
+				</div>
+				<!-- / End single pricing -->
+			</div>
+		</div>
+	</section>
+
+	<!-- / END PRICING SECTION -->
+
+
+
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Mothithang, Thimphu, BHUTAN</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+97577210490</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Bikramghalley@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Popular Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Don't miss a chance to see one of a kind animal</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Takin Zoo</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
